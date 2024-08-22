@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Evaluación M2</title>
+</head>
+<body>
+    <!--Sección inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>:ERC:</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li> 
+                            <li><a href="#titulos" onclick="seleccionar(this)">TITULOS Y CERTIFICACIONES</a></li> 
+                            <li><a href="#skills" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="bi bi-list"></i> 
+                    </div>
+                    
+                    <div class="redes">
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a> 
+                        <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a> 
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="Bienvenida"><h1>Bienvenidos</h1></p>
+                <h2>Mi nombre es <span>Estefanía Roco</span>, proyecto de programadora</h2>
+                <p class="descripcion">Ingeniero Comercial e ingeniero en Prevención de Riesgos y Medio Ambiente...</p>
+                <a href="#portafolio" class="btn-cv">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+    <!---Sección sobre mi-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+           <img src="./assets/img/ERC.jpg" alt="Foto de Estefanía Roco">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Estefanía Roco</span></h2>
+            <h1>ICO</h1>
+            <p> Un poco mas sobre mi ... <span> Me gusta mucho el futbol , los perros y puedo decir que los gatitos también , pero soy mas DOGLOVER , me gusta pintar para relajarme , y estoy constantemente aprendiendo cosas nuevas , mi juego favorito es uno que se llama ProjectMakeover lo juego desde la pandemia ya voy en el nivel 10mil , diariamente escucho música mientras trabajo , siempre estoy dispuesta apoyar a las personas del equipo en el que trabajo y a dar ideas para optimizar tiempos , disculpe profesor no puse el CV para descargar porque no me dio el tiempo :( </span></p>
+            <a href="#" class="btn-cv">Descargar CV</a>
+        </div>
+    </section>
+    <!--SECCION TITULOS Y CERTIFICACIONES-->
+    <section id="titulos">
+        <h3 class="titulo-seccion">Títulos y Certificados</h3>
+        <div class="fila">
+            <div class="titulos">
+                <span class="icono"><i class="bi bi-code-slash"></i></span> 
+                <h4>Ingeniero Comercial - Universidad Valparaíso</h4>
+                <hr>
+                <ul class="titulo-tag">
+                 <li>2008 - 2013</li>   
+                </ul>
+                <p> Contabilidad - Administración de operaciones - Adm.Recursos Humanos - Finanzas </p>
+            </div>
+            <div class="titulos">
+                <span class="icono"><i class="bi bi-code-slash"></i></span> <!-- Icono de código -->
+                <h4>Ingeniero en Prevención de Riesgos y Medio Ambiente - Universidad de las Americas </h4>
+                <hr>
+                <ul class="titulo-tag">
+                 <li>2017 - 2023</li>   
+                </ul>
+                <p> SEA - TMERT - UV - Protocolos de Salud - Procedimientos - Programas de Prevención </p>
+            </div>
+            <div class="titulos">
+                <span class="icono"><i class="bi bi-code-slash"></i></span> <!-- Icono de código -->
+                <h4>Desarrollo de Aplicaciones Full Stack JavaScript - EDUTECNO  </h4>
+                <hr>
+                <ul class="titulo-tag">
+                 <li>Loading ....</li>   
+                </ul>
+                <p>HTML - CSS - JS - Base de Datos </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección Habilidades-->
+    <div class="contenedor-skills" id="skills">
+        <h2>Habilidades</h2>
+        <div class="skill">
+            <div class="class-info">
+                <p><span class="lista"></span>HTML & CSS</p>
+                <span class="porcentaje">20%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class=""></div>
+            </div>
+        </div>
+        <div class="skill"> 
+            <div class="class-info">
+                <p><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">10%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+        <div class="skill"> 
+            <div class="class-info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">25%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class=""></div>
+            </div>
+        </div>
+        <div class="skill"> 
+            <div class="class-info">
+                <p><span class="lista"></span>Microsoft Office</p>
+                <span class="porcentaje">88%</span>
+            </div>
+            <div class="barra">
+                <div id="wo" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="p1"></div>
+                <img src="./assets/img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño web de formulario .....</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="p1"></div>
+                <img src="./assets/img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño web de botones de colores .....</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="p1"></div>
+                <img src="./assets/img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño web de cuadros de color .....</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                   <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2024</p>
+        <div class="redes">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
